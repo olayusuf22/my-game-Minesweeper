@@ -5,6 +5,3 @@ This guide will walk you through the implementation of the classic Minesweeper g
 
 By the end of this guide, you will have a functional Minesweeper game that runs in a web browser. The implementation is divided into three parts: HTML for the structure, CSS for styling, and JavaScript for the game logic. Each part will be explained in detail, along with inline comments to help you understand the code.
 
--Diagram
-
-!(https://github.com/user-attachments/assets/d9c918b8-65ed-4d2a-ba1f-952c442b97ec)
