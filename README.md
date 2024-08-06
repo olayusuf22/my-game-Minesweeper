@@ -8,3 +8,5 @@ By the end of this guide, you will have a functional Minesweeper game that runs 
 Diagram!
 
 ![alt text](image.png)
+
+![alt text](<Screenshot 2024-08-06 at 9.37.05 AM.png>)
