@@ -1,5 +1,5 @@
 document.getElementById('startButton').addEventListener('click', startGame);
-
+let message = document.getElementById('Message');
 function startGame() {
     const rows = parseInt(document.getElementById('rows').value);
     const columns = parseInt(document.getElementById('columns').value);
@@ -95,7 +95,7 @@ function revealCell(board, row, col) {
         }
     }
     if (checkWin(board)) {
-        alert('Congratulations! You won!');
+        message.innerText ='Congratulations! You won!'
         revealAllMines(board);
     }
 }
@@ -124,7 +124,7 @@ function checkWin(board) {
 }
 
 function gameOver(board) {
-    alert('You hit a mine! Game Over.');
+    message.innerText ='You hit a mine! Game Over.'
     revealAllMines(board);
 }
 
