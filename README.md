@@ -48,7 +48,6 @@ Minesweeper is a classic logic-based game where the player must clear a grid of 
 
 ## Technologies Used
 
-- JavaScript
 - HTML:We define a calculator container with a display and buttons for digits, operators, clear, and equals.
 
 - CSS: 
