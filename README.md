@@ -38,15 +38,30 @@ Minesweeper is a classic logic-based game where the player must clear a grid of 
 
 ## Screenshot
 
-<img src="https://i.imgur.com/9OcifNh.png">
+<img src="https://i.imgur.com/a/PHdYuAR.png">
 <img src="https://i.imgur.com/Qmk8jOt.png">
+<img src="https://imgur.com/tBJVYUa.png">
 
 ## Technologies Used
 
 - JavaScript
-- HTML
-- CSS
-- CardStarter CSS Library
+- HTML:We define a calculator container with a display and buttons for digits, operators, clear, and equals.
+
+- CSS: 
+The body is styled to center the calculator on the screen.
+The calculator is given a clean look with a white background, shadow, and rounded corners.
+Buttons are styled with different colors for digits, operators, and functions.
+
+- Javascript
+We use constants to select elements from the DOM.
+Variables store the current input, the first number, the second number, and the operator.
+Event listeners handle button clicks:
+Numbers are appended to the input string.
+Operators store the first number and prepare for the second input.
+The clear button resets everything.
+The equals button performs the calculation and displays the result.
+Functions handle displaying values and performing calculations based on the selected operator.
+
 
 ## Getting Started
 
