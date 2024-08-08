@@ -1,12 +1,25 @@
 document.getElementById('startButton').addEventListener('click', startGame);
+document.getElementById('resetButton').addEventListener('click', resetGame);
+
+let board;
+let gameOver = false;
 let message = document.getElementById('Message');
+
 function startGame() {
     const rows = parseInt(document.getElementById('rows').value);
     const columns = parseInt(document.getElementById('columns').value);
     const numMines = parseInt(document.getElementById('mines').value);
 
-    const board = initializeBoard(rows, columns, numMines);
+    board = initializeBoard(rows, columns, numMines);
     renderBoard(board);
+    gameOver = false;
+    message.innerText = '';
+}
+
+function resetGame() {
+    document.getElementById('board').innerHTML = '';
+    gameOver = false;
+    message.innerText = '';
 }
 
 function initializeBoard(rows, columns, numMines) {
@@ -74,6 +87,8 @@ function renderBoard(board) {
 }
 
 function revealCell(board, row, col) {
+    if (gameOver) return;
+
     const cellElement = document.querySelector(`[data-row="${row}"][data-col="${col}"]`);
     if (cellElement.classList.contains('revealed')) return;
 
@@ -81,7 +96,9 @@ function revealCell(board, row, col) {
     if (board[row][col] === 'M') {
         cellElement.classList.add('mine');
         cellElement.textContent = 'M';
-        gameOver(board);
+        gameOver = true;
+        message.innerText = 'You hit a mine! Game Over.';
+        revealAllMines(board);
     } else {
         cellElement.textContent = board[row][col];
         if (board[row][col] === ' ') {
@@ -95,7 +112,7 @@ function revealCell(board, row, col) {
         }
     }
     if (checkWin(board)) {
-        message.innerText ='Congratulations! You won!'
+        message.innerText = 'Congratulations! You won!';
         revealAllMines(board);
     }
 }
@@ -121,11 +138,6 @@ function checkWin(board) {
         }
     }
     return true;
-}
-
-function gameOver(board) {
-    message.innerText ='You hit a mine! Game Over.'
-    revealAllMines(board);
 }
 
 function revealAllMines(board) {
