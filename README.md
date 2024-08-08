@@ -33,24 +33,22 @@ Diagram!
 
 
 
-# <MineSweeper>
-A description of your game. Background info of the game is a nice touch.This guide will walk you through the implementation of the classic Minesweeper game using HTML, CSS, and JavaScript. Minesweeper is a logic-based game where the player must clear a grid of hidden mines without triggering any of them. The game provides clues about the number of mines in adjacent cells, which helps the player deduce the locations of the mines. This implementation covers the setup of the game board, mine placement, revealing cells, marking cells, and checking for win conditions.
-# Screenshot
+# Minesweeper Game
 
-<img src="https://imgur.com/a/icBeVbp">
-<img src="https://imgur.com/Qmk8jOt">
-<img src="">
+Minesweeper is a classic logic-based game where the player must clear a grid of hidden mines without triggering any of them. The game provides clues about the number of mines in adjacent cells, which helps the player deduce the locations of the mines. This guide will walk you through the implementation of the classic Minesweeper game using HTML, CSS, and JavaScript. This implementation covers the setup of the game board, mine placement, revealing cells, marking cells, and checking for win conditions.
 
-# Technologies Used
+## Screenshot
+
+![Game Screenshot 1](https://i.imgur.com/icBeVbp.png)
+![Game Screenshot 2](https://i.imgur.com/Qmk8jOt.png)
+
+## Technologies Used
 
 - JavaScript
 - HTML
 - CSS
 - CardStarter CSS Library
 
-# Getting Started
+## Getting Started
 
-[Click to Play Minesweeper!](https://olayusuf22.github.io//my-game-minesweeper/)
-
-# Next Steps
-
+[Click to Play Minesweeper!](https://olayusuf22.github.io/my-game-minesweeper/)
