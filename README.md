@@ -38,8 +38,8 @@ Minesweeper is a classic logic-based game where the player must clear a grid of 
 
 ## Screenshot
 
-![Game Screenshot 1](https://i.imgur.com/icBeVbp.png)
-![Game Screenshot 2](https://i.imgur.com/Qmk8jOt.png)
+<img src="https://imgur.com/9OcifNh.png">
+<img src="https://i.imgur.com/Qmk8jOt.png">
 
 ## Technologies Used
 
